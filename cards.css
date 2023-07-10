@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section.sectionDois{
+    /* height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 0px 10px;
+    
+    /* background-image: linear-gradient(45deg,rgb(189, 161, 4),#000); */
+}
+h1.titulo-sectionDois{
+    
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+    /* background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(45deg, rgb(189,161,4), #000); */
+      color: rgb(189, 161, 4);
+    
+   
+   }
+.container{
+    position: relative;
+    /* width: 325px;
+    height: 325px; */
+    width: 21rem;
+    height: 21rem;
+    margin-top: 2rem;
+    margin: .8rem   ;
+    
+    
+    
+}
+.container:hover .flip{
+    transform: rotateY(182deg);
+    
+}
+
+
+.flip{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: .8s;
+}
+.frente,.tras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(189, 161, 4);
+    backface-visibility: hidden;
+    min-width: 350px;
+}
+
+@media screen and (max-width: 1500px) {
+    .sectionDois {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 10px;
+    }
+  }
+  
+.frente{
+    background-image: url(./imagens/logooooo-PhotoRoom.png-PhotoRoom.png);
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    color: rgb(189, 161, 4);
+    padding-top: 2rem;
+    
+}
+/* h1.modalidades{
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, rgb(189,161,4), #837f7f);
+} */
+.tras{
+    /* background-image: url(./imagens/Meuprojeto.png); */
+    /* background-size: cover; */
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+   
+   
+}
+
+div.item1{
+    background-image: url(./imagens/realize.png);
+    background-size: cover;
+    /* background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, rgb(189,161,4), #837f7f); */
+}
+div.item2{
+    background-image: url(./imagens/dança.jpg);
+    background-size: cover;
+}
+div.item3{
+    background-image: url(./imagens/307786593_127434713381059_9039259460524868771_n.jpg);
+    background-size: cover;
+    /* background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, rgb(189,161,4), #837f7f); */
+}
+div.item4{
+    background-image: url(./imagens/323189912_184280377617515_8727334211818808084_n.jpg);
+    background-size: cover;
+    color: rgb(189, 161, 4);
+
+}
+div.item5{
+    background-image: url(./imagens/Gympass.jpg);
+    background-size: cover;
+}
+/* @media screen and (max-width: 400px){
+    section.sectionDois{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+        
+        
+    }
+    .container{
+        position: relative;
+        width:100%;
+        height: 280px;
+        margin: 0px;
+        
+        
+    }
+    
+
+} */
+
+
+    
+
